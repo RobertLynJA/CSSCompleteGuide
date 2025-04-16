@@ -12,5 +12,8 @@
 .box1 {
   height: 300px;
   width: 50%;
-  display: none;
+}
+
+div:last-of-type:hover {
+  background-color: red;
 }
