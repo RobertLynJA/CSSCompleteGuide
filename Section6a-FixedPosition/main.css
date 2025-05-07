@@ -30,4 +30,5 @@ body {
 
 .parent .child-1 {
   position: fixed;
+  top: 0;
 }
