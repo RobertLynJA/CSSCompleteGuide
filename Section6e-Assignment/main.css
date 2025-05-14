@@ -10,12 +10,15 @@
 
 .section-title {
     color: #2ddf5c;
-    text-align: center;
+    text-align: center;    
 }
 
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
+    position: absolute;
+    left: 10px;
+    bottom: 260px;
 }
 
 .plan__list {
