@@ -6,6 +6,7 @@
     height: 528px;
     padding: 10px;
     margin-top: 43px;
+    position: relative;
 }
 
 .section-title {
@@ -18,7 +19,7 @@
     font-family: 'Anton', sans-serif;
     position: absolute;
     left: 10px;
-    bottom: 260px;
+    bottom: 0px;
 }
 
 .plan__list {
