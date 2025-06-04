@@ -1,10 +1,22 @@
-const backdrop = document.querySelector('.backdrop');
-const modal = document.querySelector('.modal');
-const selectPlanButtons = document.querySelectorAll(".plan button");
+var backdrop = document.querySelector('.backdrop');
+var modal = document.querySelector('.modal');
+var selectPlanButtons = document.querySelectorAll('.plan button');
+var noButton = document.querySelector(".modal__action--negative");
 
-for (const button of selectPlanButtons) {
-  button.addEventListener('click', () => {
-    modal.style.display = 'block';
-    backdrop.style.display = 'block';
-  });
+// console.dir(backdrop);
+for (var i = 0; i < selectPlanButtons.length; i++) {
+    selectPlanButtons[i].addEventListener('click', function() {
+        modal.style.display = 'block';
+        backdrop.style.display = 'block';
+    });
+}   
+
+const closeModal = () => {
+    modal.style.display = 'none';
+    backdrop.style.display = 'none';
 }
+
+backdrop.addEventListener('click', closeModal);
+
+noButton.addEventListener('click', closeModal);
+
